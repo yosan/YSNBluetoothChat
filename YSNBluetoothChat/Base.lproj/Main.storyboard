@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="YSNViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XCG-bp-VAz"/>
+                        <viewControllerLayoutGuide type="bottom" id="bSA-S0-eor"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input your display name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HkC-PF-5pI">
+                                <rect key="frame" x="20" y="27" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A67-Ag-dAG">
+                                <rect key="frame" x="20" y="65" width="91" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="s4p-CY-5nK"/>
+                                </constraints>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSearchButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uYW-k9-dhH"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tbx-d9-mlS">
+                                <rect key="frame" x="128" y="94" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onAdvertiseSwitchChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="LZ5-pR-Z8U"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advertise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmK-8x-tSZ">
+                                <rect key="frame" x="119" y="65" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zoa-EO-edD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gta-Hk-Yhg">
+                                <rect key="frame" x="251" y="133" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="CHa-f3-eMH"/>
+                                </constraints>
+                                <state key="normal" title="Send">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSendButtonCliced:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JIK-ZM-R8R"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtB-6D-rGL">
+                                <rect key="frame" x="20" y="171" width="280" height="377"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.64313725489999995" green="0.76078431369999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q06-VP-DnG">
+                                <rect key="frame" x="194" y="65" width="106" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Disconnect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDisconnectButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="76c-wS-TwB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TON-lY-jbm">
+                                <rect key="frame" x="20" y="133" width="223" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HkC-PF-5pI" firstAttribute="top" secondItem="XCG-bp-VAz" secondAttribute="bottom" constant="7" id="0Bm-Gu-nSV"/>
+                            <constraint firstItem="Gta-Hk-Yhg" firstAttribute="top" secondItem="q06-VP-DnG" secondAttribute="bottom" constant="8" symbolic="YES" id="0ve-8e-x4n"/>
+                            <constraint firstItem="Tbx-d9-mlS" firstAttribute="top" secondItem="lmK-8x-tSZ" secondAttribute="bottom" constant="8" symbolic="YES" id="1KA-fN-BFw"/>
+                            <constraint firstItem="HkC-PF-5pI" firstAttribute="trailing" secondItem="q06-VP-DnG" secondAttribute="trailing" id="FKJ-ls-VdZ"/>
+                            <constraint firstItem="TON-lY-jbm" firstAttribute="top" secondItem="Tbx-d9-mlS" secondAttribute="bottom" constant="8" symbolic="YES" id="HjC-P2-71J"/>
+                            <constraint firstItem="EtB-6D-rGL" firstAttribute="top" secondItem="TON-lY-jbm" secondAttribute="bottom" constant="8" symbolic="YES" id="IUj-3d-A9d"/>
+                            <constraint firstItem="lmK-8x-tSZ" firstAttribute="leading" secondItem="A67-Ag-dAG" secondAttribute="trailing" constant="8" symbolic="YES" id="Ino-vw-pji"/>
+                            <constraint firstItem="HkC-PF-5pI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="KL0-r6-8i3"/>
+                            <constraint firstAttribute="trailing" secondItem="HkC-PF-5pI" secondAttribute="trailing" constant="20" symbolic="YES" id="KNF-GB-lQr"/>
+                            <constraint firstItem="q06-VP-DnG" firstAttribute="leading" secondItem="lmK-8x-tSZ" secondAttribute="trailing" constant="8" symbolic="YES" id="NfT-SP-laG"/>
+                            <constraint firstItem="q06-VP-DnG" firstAttribute="top" secondItem="HkC-PF-5pI" secondAttribute="bottom" constant="8" symbolic="YES" id="RBW-3N-fFB"/>
+                            <constraint firstItem="q06-VP-DnG" firstAttribute="leading" secondItem="Tbx-d9-mlS" secondAttribute="trailing" constant="17" id="U33-cB-DXE"/>
+                            <constraint firstItem="lmK-8x-tSZ" firstAttribute="top" secondItem="HkC-PF-5pI" secondAttribute="bottom" constant="8" symbolic="YES" id="VCK-Jt-2qr"/>
+                            <constraint firstItem="Gta-Hk-Yhg" firstAttribute="leading" secondItem="TON-lY-jbm" secondAttribute="trailing" constant="8" symbolic="YES" id="VzT-0q-KzE"/>
+                            <constraint firstItem="EtB-6D-rGL" firstAttribute="trailing" secondItem="Gta-Hk-Yhg" secondAttribute="trailing" id="X4N-mn-XpG"/>
+                            <constraint firstItem="EtB-6D-rGL" firstAttribute="leading" secondItem="TON-lY-jbm" secondAttribute="leading" id="X9f-jW-cMr"/>
+                            <constraint firstItem="A67-Ag-dAG" firstAttribute="leading" secondItem="TON-lY-jbm" secondAttribute="leading" id="XA6-B7-TaG"/>
+                            <constraint firstItem="q06-VP-DnG" firstAttribute="trailing" secondItem="Gta-Hk-Yhg" secondAttribute="trailing" id="bjF-t8-fnK"/>
+                            <constraint firstItem="A67-Ag-dAG" firstAttribute="top" secondItem="HkC-PF-5pI" secondAttribute="bottom" constant="8" symbolic="YES" id="eFZ-eg-ogl"/>
+                            <constraint firstItem="lmK-8x-tSZ" firstAttribute="centerX" secondItem="Tbx-d9-mlS" secondAttribute="centerX" id="kth-0T-WqL"/>
+                            <constraint firstItem="A67-Ag-dAG" firstAttribute="leading" secondItem="HkC-PF-5pI" secondAttribute="leading" id="lg3-lT-vpY"/>
+                            <constraint firstItem="TON-lY-jbm" firstAttribute="top" secondItem="A67-Ag-dAG" secondAttribute="bottom" constant="8" symbolic="YES" id="qEK-kF-bun"/>
+                            <constraint firstAttribute="bottom" secondItem="EtB-6D-rGL" secondAttribute="bottom" constant="20" symbolic="YES" id="wpx-uO-YvP"/>
+                            <constraint firstItem="TON-lY-jbm" firstAttribute="top" secondItem="q06-VP-DnG" secondAttribute="bottom" constant="8" symbolic="YES" id="yau-9w-AGZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="advertiseSwitch" destination="Tbx-d9-mlS" id="SJS-Ci-OP8"/>
+                        <outlet property="chatTextView" destination="EtB-6D-rGL" id="ktb-NX-8sH"/>
+                        <outlet property="disconnectButton" destination="q06-VP-DnG" id="JYj-in-mJp"/>
+                        <outlet property="displayNameField" destination="HkC-PF-5pI" id="M8D-ji-cpG"/>
+                        <outlet property="messageField" destination="TON-lY-jbm" id="qeH-e3-bX5"/>
+                        <outlet property="searchButton" destination="A67-Ag-dAG" id="fA6-kc-kZG"/>
+                        <outlet property="sendButton" destination="Gta-Hk-Yhg" id="XL7-jb-47A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="51"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
