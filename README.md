@@ -53,3 +53,5 @@ You can control advertising by this object sending "start" and "stop" message.
 If host member invite you, connection request is shown on popup view.
 
 ![MCAdvertiserAssistant](./screenshots/request_popup.png "MCAdvertiserAssistant")
+
+Please use this sample for your great apps!!
