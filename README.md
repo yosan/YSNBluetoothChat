@@ -2,6 +2,7 @@ YSNBluetoothChat
 ================
 
 This is a very simple application using MultipeerConnectivity framework.
+You can chat with someone via bluetooth.
 
 ![Application Screen](./screenshots/application_screen.png "Application Screen")
 
